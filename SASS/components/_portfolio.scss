@@ -1,0 +1,17 @@
+.titleSec{
+    padding-left: 20%;
+
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 20rem;
+
+    & .titleBig{
+        color: $color-primary;
+        font-weight: 600;
+    }
+    & .block{
+        height: .2rem;
+        width: 20rem;
+        background-color: $color-primary;
+    }
+}

@@ -1,0 +1,23 @@
+.container{
+    height: 200vh;
+    
+
+    // align-items: center;
+
+    justify-content: center;
+
+}
+.sectionMain{
+    height:100vh;
+    display: grid;
+    justify-content: center;
+
+    &__logo{
+        height: 12rem;
+        margin: 0 auto;
+        
+    
+    }
+}
+
+
