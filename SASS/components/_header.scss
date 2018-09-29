@@ -1,0 +1,20 @@
+.header{
+    height: 100vh;
+    background-color: $color-dark-secondary;
+    // align-items: center;
+    display: grid;
+    justify-content: center;
+
+}
+.logo{
+
+    justify-self: center;
+    &__img{
+        height: 12rem;
+        margin: 0 auto;
+        
+    
+    }
+}
+
+

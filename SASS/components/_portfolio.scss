@@ -1,17 +1,21 @@
-.titleSec{
-    padding-left: 20%;
-
+.portfolio{
+    height: 100vh;
+    background-color: $color-dark-secondary;
+}  
+.portfolio__box{
+    height: 30vh;
     display: grid;
-    justify-content: center;
-    grid-template-columns: 20rem;
 
-    & .titleBig{
-        color: $color-primary;
-        font-weight: 600;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-gap: 4rem;
+
+    &__pic{
+        width: 50%;
+        height: 2rem;
+        background-size: contain;
+        }
+        
+        &__tile{
+            color: palevioletred;
+        }
     }
-    & .block{
-        height: .2rem;
-        width: 20rem;
-        background-color: $color-primary;
-    }
-}

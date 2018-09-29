@@ -38,3 +38,32 @@ body {
   min-width: 100%;
   min-height: 220%;
 }
+
+
+//typography 
+
+.title-middle{
+  margin-bottom: 1rem;
+  text-align: center;
+  
+  &__main{
+    font-size: 3rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1.7rem;
+    color: $color-white;
+    display: block;
+    animation: moveInTop 1s ease-out;
+    animation-fill-mode: backwards;
+
+  }
+  &__sub{
+    font-size: 1.2rem;
+    letter-spacing: .4rem;
+    margin-top: 1rem;
+    color: $color-primary;
+    display: block;
+    animation: moveInTop 1s ease-out .8s;
+    animation-fill-mode: backwards;
+  }
+}
