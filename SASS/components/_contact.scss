@@ -1,3 +1,35 @@
-.contact{
-    grid-column: full-start / full-end;
-}
+.contact{ 
+    display: grid;
+    align-content: center;
+    background-color:$color-dark-tertiary;
+    color: $color-white;
+    font-size: 1.6rem;
+    
+
+    &__main{
+      grid-column: full-start / col-end 2;
+      grid-template-columns: repeat(4, [col-start] 1fr [col-end]);
+      
+      letter-spacing: .2rem;
+      font-weight: 400;
+      text-transform: uppercase;
+
+      &-text{
+        grid-column: col-start 3 / col-end 4;
+        animation: moveInTop 1s ease-out;
+      }
+    }
+    &__sub{
+      grid-column: col-start 3 / full-end;
+      grid-template-columns: repeat(10, [col-start] 1fr [col-end]);
+      
+      &-text{
+        grid-column: col-start 2 / col-end 7;
+        animation: moveInTop 1s ease-out;
+        margin-bottom: 3rem;
+        & p{
+            color:$color-primary;
+        }
+      }
+    }
+  }
