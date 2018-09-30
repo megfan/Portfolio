@@ -28,42 +28,11 @@ body {
   color: $color-white;
   background-color: $color-dark-primary;
 
-  @include respond(tab-port) {
-    padding: 0;
-  }
 }
 
-.backgroundMain{
-  right: 0;
-  min-width: 100%;
-  min-height: 220%;
-}
-
-
-//typography 
-
-.title-middle{
-  margin-bottom: 1rem;
-  text-align: center;
-  
-  &__main{
-    font-size: 3rem;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 1.7rem;
-    color: $color-white;
-    display: block;
-    animation: moveInTop 1s ease-out;
-    animation-fill-mode: backwards;
-
-  }
-  &__sub{
-    font-size: 1.2rem;
-    letter-spacing: .4rem;
-    margin-top: 1rem;
-    color: $color-primary;
-    display: block;
-    animation: moveInTop 1s ease-out .8s;
-    animation-fill-mode: backwards;
-  }
+.container{
+  display: grid;
+  grid-template-rows: 100vh 20vh 40vw 40vw repeat(3, min-content);
+  grid-template-columns:  [full-start] 1fr [center-start]
+  repeat(8, [col-start] 1fr [col-end]) [center-end] 1fr [full-end];
 }
