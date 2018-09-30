@@ -9,7 +9,7 @@
 
         &__txt{
         
-            grid-column: col-start 3 / col-end 4;
+            grid-column: col-start 2 / col-end 4;
             font-size: 1.6rem;
             color: $color-white;
             letter-spacing: .2rem;
@@ -18,10 +18,16 @@
                 text-transform: uppercase;
                 // font-weight: 400;
                 padding-bottom: 3rem;
+                &:hover{
+                    color: $color-primary;
+                }
             }
             &__description{
                 font-size: 1.3rem;
                 line-height: 2.2rem;
+                &:hover {
+                    color: $color-primary;
+                }
                 
             }
             &__list{
@@ -54,14 +60,17 @@
         justify-content: center;
 
         &__1{
-            grid-column: col-start 2 / col-end 9;
+            grid-column: col-start 3 / col-end 10;
             grid-row: 2/-2;
             width: 80%;
             transition: all .4s ease;
+            filter: saturate(0);
             
             &:hover{
                 transform: scale(1.02);
+                filter: saturate(1);
             }
+
         }
     }
     
@@ -70,7 +79,7 @@
     border: 1px solid $color-white;
     padding: 2rem 4rem;
     background-color: transparent;
-    color: $color-primary;
+    color: $color-white;
     margin-top: 3rem;
     text-transform: uppercase;
     letter-spacing: .2rem;
@@ -78,7 +87,7 @@
     transition: all .4s ease;
     &:hover{
         border: 1px solid $color-primary;
-        color: $color-white;
+        color: $color-primary;
         background-color: $color-dark-secondary;
 
     }

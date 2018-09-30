@@ -15,7 +15,7 @@
       text-transform: uppercase;
 
       &-text{
-        grid-column: col-start 3 / col-end 4;
+        grid-column: col-start 2 / col-end 4;
         animation: moveInTop 1s ease-out;
       }
     }

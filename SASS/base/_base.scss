@@ -32,7 +32,7 @@ body {
 
 .container{
   display: grid;
-  grid-template-rows: 100vh 40vh 40vw 40vw 40vw 40vw 40vh min-content;
+  grid-template-rows: 100vh 60vh 40vw 40vw 40vw 40vw 40vh min-content;
   grid-template-columns:  [full-start] 1fr [center-start]
   repeat(8, [col-start] 1fr [col-end]) [center-end] 1fr [full-end];
 }
