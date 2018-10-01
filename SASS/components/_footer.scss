@@ -1,5 +1,26 @@
 .footer{
     grid-column: full-start / full-end;
-    background-color: black;
-    padding: 10rem 0;
+    background-color: $color-dark-secondary;
+    padding: 3rem 0;
+    display: grid;
+
+    letter-spacing: .2rem;
+    font-weight: 400;
+    &__grid{
+        grid-column: full-start / col-end 4;
+        grid-template-columns: repeat(5, [col-start] 1fr [col-end]);
+
+        &__text{
+            grid-column: col-start 2 / col-end 4;
+            color: $color-dark-primary;
+        }
+    }
+    &__blank{
+        grid-column: col-start 5 / full-end;
+        
+        grid-template-columns: repeat(10, [col-start] 1fr [col-end]);
+        &__icons{
+            grid-column: col-start 2 / col-end 7;
+        }
+    }
 }

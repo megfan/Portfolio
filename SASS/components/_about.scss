@@ -7,9 +7,9 @@
     
 
     &__main{
-      grid-column: full-start / col-end 2;
+      grid-column: full-start / col-end 3;
       grid-template-columns: repeat(4, [col-start] 1fr [col-end]);
-      
+      background-color:$color-dark-quatro;
       letter-spacing: .2rem;
       font-weight: 400;
       text-transform: uppercase;
@@ -17,10 +17,11 @@
       &-text{
         grid-column: col-start 2 / col-end 4;
         animation: moveInTop 1s ease-out;
+        background-image: none;
       }
     }
     &__sub{
-      grid-column: col-start 3 / full-end;
+      grid-column: col-start 4 / full-end;
       grid-template-columns: repeat(10, [col-start] 1fr [col-end]);
       
       &-text{

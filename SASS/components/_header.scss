@@ -1,8 +1,12 @@
+#app{
+    grid-column: full-start / full-end;
+}
 .header{
     
-    background-color:  $color-dark-primary;
+    background-color:  $color-dark-secondary;
     // align-items: center;
     grid-column: full-start / full-end;
+    grid-template-columns: repeat(10, [col-start] 1fr [col-end]);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -14,7 +18,7 @@
         }
     }
     &__heading{
-        padding-top: 30rem;
+        padding-top: 25rem;
         justify-self: center;
     }
 }

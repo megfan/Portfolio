@@ -1,35 +1,40 @@
 .portfolio{
 
-        grid-column: full-start / col-end 2;
+        grid-column: full-start / col-end 3;
         display: grid;
         align-content: center;
         grid-template-columns: repeat(4, [col-start] 1fr [col-end]);
-        background-color: $color-dark-secondary;
+        background-color: $color-dark-tertiary;
         padding: 10rem 0;
+        &::before{
+            content: "";
+            height: 10px;
+            background-color: $color-dark-primary;
+            margin-right: 4rem;
+            margin-top: 1rem;
+        }
 
         &__txt{
         
-            grid-column: col-start 2 / col-end 4;
+            grid-column: col-start 2 / col-end 3;
             font-size: 1.6rem;
             color: $color-white;
             letter-spacing: .2rem;
+            transition: all .2s ease;
             
             &__heading{
                 text-transform: uppercase;
                 // font-weight: 400;
                 padding-bottom: 3rem;
-                &:hover{
-                    color: $color-primary;
-                }
             }
             &__description{
                 font-size: 1.3rem;
                 line-height: 2.2rem;
-                &:hover {
-                    color: $color-primary;
-                }
-                
             }
+            &:hover &__heading{
+                color: $color-primary;
+            }
+
             &__list{
                 
                 margin-top: 2rem;
@@ -49,7 +54,7 @@
         }
 
     &__pic{
-        grid-column: col-start 3 / full-end;
+        grid-column: col-start 4 / full-end;
         grid-template-rows: 10rem 1fr 10rem;
         background-color: $color-dark-secondary;
         display: grid;
@@ -58,22 +63,50 @@
 
         align-items: center;
         justify-content: center;
+        &__before{
+            grid-column: col-start 2 / col-end 10;
+            grid-row: 2/-2;
+            content: "View demo";
+            transform: rotate(-90deg);
+            text-align: center;
+            padding: .4rem;
+            height: 11rem;
+            width: 11rem;
+            background-color: $color-dark-primary;
+            
+            margin: 0;
+            & a{
+                text-decoration: none;
+                color: $color-primary;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: .1rem;
+                font-size: 1.2rem;
+                &:hover{
+                    font-weight: 900;
+                    color: $color-secondary;
+                }
+            }
+        }
 
         &__1{
-            grid-column: col-start 3 / col-end 10;
+            grid-column: col-start 2 / col-end 10;
             grid-row: 2/-2;
             width: 80%;
-            transition: all .4s ease;
-            filter: saturate(0);
+            transform: translateX(0rem);
+            z-index: 1;
             
-            &:hover{
-                transform: scale(1.02);
-                filter: saturate(1);
-            }
-
-        }
-    }
+            -webkit-transition: all 1s ease-in-out .6s;
+            -moz-transition: all 1s ease-in-out .6s;
     
+            &:hover{
+                transform: translateX(4rem);
+                -webkit-transition: all .4s ease-in-out ;
+                -moz-transition: all .4s ease-in-out ;
+            }
+        }
+    
+    }  
 }
 .btn{
     border: 1px solid $color-white;

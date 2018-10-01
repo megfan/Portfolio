@@ -7,15 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class='container'>
-
-    <header class="header">
-        <div class="header__logo">
-            <img src="img/2.png" alt="Logo" class="header__logo__img">
-        </div>
-        <div class="header__heading">
-            <img src="img/4.png" alt="Heading" class="header__title__img">
-        </div>
-    </header>
+    <div id="app" class='container'></div>
 
     <div class="about about__main">
         <span class="about__main-text">Meg Staszewska</span>
@@ -44,13 +36,18 @@
                 <li class="portfolio__txt__list-item">SCSS</li>
                 <li class="portfolio__txt__list-item">animateScroll</li>
             </ul>
-            <button class="btn">View code</button>    
+            <a href="https://github.com/megfan/React_Quiz">
+                <button class="btn">View code</button>  
+            </a>
+              
         </div>
     </div>
 
-
     <div class="portfolio__pic">
             <img src="img/g1.png" alt="Gallery 1" class="portfolio__pic__1">
+            <div class="portfolio__pic__before">
+                <a href="https://megfan.github.io/#/">View Demo</a>
+            </div>
     </div>
 
     <div class="portfolio">
@@ -69,12 +66,17 @@
                 <li class="portfolio__txt__list-item">CSS Grid</li>
                 <li class="portfolio__txt__list-item">Scroll Magic</li>
             </ul>
-            <button class="btn">View code</button>    
+            <a href="https://github.com/megfan/NaHalna_project">
+                <button class="btn">View code</button>  
+            </a>   
         </div>
     </div>
 
     <div class="portfolio__pic">
             <img src="img/g2.png" alt="Gallery 2" class="portfolio__pic__1">
+            <div class="portfolio__pic__before">
+                <a href="https://github.com/megfan/NaHalna_project">View Demo</a>
+            </div>
     </div>
 
     <div class="portfolio">
@@ -89,12 +91,17 @@
                 <li class="portfolio__txt__list-item">jQuery</li>
                 <li class="portfolio__txt__list-item">Java Script</li>
             </ul>
-            <button class="btn">View code</button>    
+            <a href="https://github.com/megfan/MakeUpYourself_onepage">
+                <button class="btn">View code</button>  
+            </a>    
         </div>
     </div>
         
     <div class="portfolio__pic">
             <img src="img/g3.png" alt="Gallery 3" class="portfolio__pic__1">
+            <div class="portfolio__pic__before">
+                <a href="https://github.com/megfan/MakeUpYourself_onepage">View Demo</a>
+            </div>
     </div>
 
     <div class="portfolio">
@@ -108,12 +115,17 @@
                 <li class="portfolio__txt__list-item">SASS</li>
                 <li class="portfolio__txt__list-item">CSS3</li>
             </ul>
-            <button class="btn">View code</button>    
+            <a href="https://github.com/megfan/Advanced_CSS_Course">
+                <button class="btn">View code</button>  
+            </a>    
         </div>
     </div>
         
     <div class="portfolio__pic">
             <img src="img/g4.png" alt="Gallery 4" class="portfolio__pic__1">
+            <div class="portfolio__pic__before">
+                <a href="https://github.com/megfan/Advanced_CSS_Course">View Demo</a>
+            </div>
     </div>
    
     <div class="contact contact__main">
@@ -124,19 +136,32 @@
             <p>megfa@yahoo.com</p>
         </span>
         <span class="contact__sub-text">Other:
-            <p>https://www.linkedin.com/in/margaretsta</p>
-            <p>https://github.com/megfan</p>
+            <p>
+            <a href="https://www.linkedin.com/in/margaretsta">
+                <img src="img/in.png" alt="LinkeIn" class="link__img"/>
+            </a>
+            <a href="https://github.com/megfan">
+                <img src="img/git.png" alt="GitHub" class="link__img"/>
+            </a>
+            <a href="https://www.linkedin.com/in/margaretsta">
+                <img src="img/pic.png" alt="LinkeIn" class="link__img"/>
+            </a>
+            </p>
         </span>
     </div>
 
-    <div class="footer">
-        Copyright&copy 2018 Meg Fantom
+
+    <div class="footer footer__grid">
+        <span class="footer__grid__text">Copyright&copy 2018 Meg Fantom</span>
     </div>
+    <div class="footer footer__blank">
+            
+        </div>
 
     
 
 
 
-    <!-- <div id="app"></div>
-    <script src="js/out.js"></script> -->
+    
+    <script src="js/out.js"></script>
 </body>
