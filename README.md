@@ -1,8 +1,8 @@
 # Personal Portfolio
-Minimal One Pager as short presentation of latest projects.
+Minimal One Pager created as a short presentation of latest projects.
 
 ## View:
-[React Quiz](https://megfan.github.io)
+[Portfolio](https://megfan.github.io)
 
 ## Built With
 
@@ -11,8 +11,7 @@ Minimal One Pager as short presentation of latest projects.
 * Sass
 * Scroll Magic Tool
 
-### RPD
 
-### Authors
+### Author
 
 * **Margaret Staszewska**
